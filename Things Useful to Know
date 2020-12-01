@@ -2,9 +2,39 @@
 1) TF.IDF
 2) Hash functions
 3) Secondary storage
-4) Natural Logarithms
-5) Power Laws
+4) Power Laws
 
 
+1) TF.IDF (Term Frequency times Inverse Document Frequency)
+* (여러 개의) 문서 내에서 단어 중요도 찾기
+* 메인 아이디어 : 단어 등장 빈도수 / 해당 단어가 나타난 문서 개수 
+
+TF = 해당 단어 빈도수 / max 단어 빈도수 => 상대도수로 표현
+IDF =  log2(N/ni) ( N은 문서의 개수, ni는 해당 단어가 나타난 문서 개수 ) 
+=> TF.IDF 점수 = TF * IDF
+
+2) Hash functions
+
+기본적인 개념은 원래 알고 있었으므로 생략.
+근데 만약, key가 integer가 아니라면? => 아스키 코드나 유니코드로 변형하여 생각
+문자열의 경우에도 동일, recursive하게 integer로 바꿔주면 됨.
+모든 integer를 합하여(sum) 우리가 기준으로 잡고자 하는 bucket (B)로 나누어서 해시 key 구분 가능해짐.
+
+3) Secondary Storage (disk) 
+* main memory에 저장된 data를 computation하는 것이 시간을 줄이는 효과적인 방법
+
+각 disk block을 (해시함수의) bucket으로 접근하자.
+해시의 key로 value를 얻듯이 동일하게 search하면 된다.
+cylinder : collection of blocks reachable at a fixed radius from the center of the disk -> 디스크 head를 움직이지 않고 접근 가능
+
+
+4) Power Laws
+* 두 개의 로그변수에 대하여 서로 선형관계를 이루는 식
+(자연로그 사용)
+ex) node degrees in graph, sales of proudcts...
+"Matthew Effect"와 큰 관련이 있다. 
+=> Matthew Effect란? 빈익빈 부익부 느낌..
+높은 점수를 가지는 하나의 특성이 계속해서 승승장구한다.
+ex) 아마존 사이트에서 잘 팔리는 책 -> 계속 해서 광고에 뜸 -> 다른 소비자들도 구매 
 
 
