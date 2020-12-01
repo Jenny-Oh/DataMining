@@ -1,2 +1,6 @@
 # DataMining
-Self-study (ing) 
+Self-study (01/DEC/2020 ~)
+"Mining of Massive Datasets" by ANAND RAJARAMAN, JEFFREY DAVID ULLMAN
+혼자 읽고 정리하기...
+코드는....못해...어려워....
+해볼수나 잇을까...?
