@@ -29,7 +29,12 @@
 * extreme stream mining : 각 stream element 후 답해야함 -> on-line
 * click-trough rate : 광고를 노출한 횟수/사용자가 클릭한 횟수
 메인 아이디어 : to assign a query for highest bidder who still has budget yet
-=>  (광고료 간의)competitive ration 필요
+=>  (광고료 간의)competitive ratio 필요
 
+*** Greedy + On-line 알고리즘 ***
+ competitve ratio <= 1/2
+ 누가 bid을 더 많이 했는지가 우선권
+ 
 **** Balance Algorithm *****
+해당 adword에 대하여 bid한 advertiser 중 budget이 더 큰 쪽 선택
 
