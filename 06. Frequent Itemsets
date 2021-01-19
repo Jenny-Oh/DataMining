@@ -14,4 +14,7 @@ support threshold (s)가 주어졌을때, 가장 frequent 한 set을 우리는 m
 
 6.2.5. The A-Priori Algorithm
 
+the simple approach : nC2 개의 모든 순서쌍을 다 탐색하는 경우
+<=> A-Priori 는 다르다. ( 2-pass로 이루어짐. )
 
+1st Pass
