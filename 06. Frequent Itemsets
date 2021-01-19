@@ -1,0 +1,17 @@
+6.2.3. Monotonicity of Itemsets
+
+support threshold (s)가 주어졌을때, 가장 frequent 한 set을 우리는 maximal하다고 한다 
+=> 이 maximal itemset의 모든 subset도 frequent 할 것이다.
+
+
+6.2.4.  Tyranny of Counting Pairs
+
+"대부분의 메인 메모리는 frequent pair를 찾는데에 쓰인다" => 탐색 개수를 줄이는 것이 관건이다
+
+만약 frequent pairs 대신 triple(3), quadruple(4)를 찾는다면, "monotonicity" 성질에 의거하여
+그 안에 frequent한 pair(subsets)들이 더 많이 생겨난다. 
+-> 따라서 pair의 개수를 찾는 것이 불가피 하다.
+
+6.2.5. The A-Priori Algorithm
+
+
